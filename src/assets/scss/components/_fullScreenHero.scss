@@ -1,8 +1,8 @@
-$hero-full-screen-bg: url('https://images.pexels.com/photos/378273/pexels-photo-378273.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb') center center no-repeat;
+$hero-full-screen-bg: url(../img/hero.jpg) center center no-repeat;
 $hero-full-screen-bg-size: cover;
 $hero-full-screen-text-color: $white;
 
-.hero-full-screen {
+.hero-full-screen, .hero-partial-screen {
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -18,7 +18,18 @@ $hero-full-screen-text-color: $white;
   }
 
   .top-content-section {
-    width: 100%;
+    align-self: flex-start;
+    padding: 12px;
+    color: $hero-full-screen-text-color;
+
+    .hero-logo {
+        transition: all 200ms;
+        color: $hero-full-screen-text-color;
+        &:hover {
+            color: $light-gray;
+            transform: scale(1.1);
+        }
+    }
   }
 
   .bottom-content-section {
@@ -30,32 +41,13 @@ $hero-full-screen-text-color: $white;
       fill: $hero-full-screen-text-color;
       transition: all 200ms;
       &:hover {
+          fill: $light-gray;
         transform: scale(1.1);
       }
     }
   }
-
-  // optional demo styles
-  .top-bar {
-    background: transparent;
-
-    .menu {
-      background: transparent;
-    }
-
-    .menu-text {
-      color: $hero-full-screen-text-color;
-    }
-
-    .menu li {
-      display: flex;
-      align-items: center;
-    }
-
-    .menu a {
-      color: $hero-full-screen-text-color;
-      font-weight: bold;
-    }
-  }
 }
 
+.hero-partial-screen {
+    height: 80vh;
+}

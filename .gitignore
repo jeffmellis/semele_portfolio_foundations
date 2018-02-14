@@ -4,3 +4,10 @@ npm-debug.log
 bower_components
 dist
 *.swp
+
+.tmp
+.sass-cache
+.editorconfig
+.gitattributes
+.idea/
+*.xml

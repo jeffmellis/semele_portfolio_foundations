@@ -6,6 +6,7 @@
 @import "components/fonts";
 @import 'components/fullScreenHero';
 @import 'components/blog';
+@import 'components/experienceBlock';
 
 
 @include foundation-global-styles;
@@ -55,3 +56,7 @@
 
 @include motion-ui-transitions;
 @include motion-ui-animations;
+
+body {
+    background: linear-gradient(#f1f1f1, #ffffff);
+}
