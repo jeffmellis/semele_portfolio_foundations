@@ -1,6 +1,6 @@
 $hero-full-screen-bg: url(../img/hero.jpg) center center no-repeat;
 $hero-full-screen-bg-size: cover;
-$hero-full-screen-text-color: $white;
+$hero-full-screen-text-color: #353A15;
 
 .hero-full-screen, .hero-partial-screen {
   height: 100vh;
@@ -16,7 +16,6 @@ $hero-full-screen-text-color: $white;
 
   &.volunteer {
       background: url(../img/volunteer/hero.jpg) center center no-repeat;
-      color: orange !important;
   }
 
   .middle-content-section {
@@ -33,7 +32,6 @@ $hero-full-screen-text-color: $white;
         transition: all 200ms;
         color: $hero-full-screen-text-color;
         &:hover {
-            color: $light-gray;
             transform: scale(1.1);
         }
     }
@@ -45,7 +43,7 @@ $hero-full-screen-text-color: $white;
     svg {
       height: rem-calc(60);
       width: rem-calc(60);
-      fill: $hero-full-screen-text-color;
+      fill: $white;
       transition: all 200ms;
       &:hover {
           fill: $light-gray;
