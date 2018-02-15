@@ -12,6 +12,13 @@ $hero-full-screen-text-color: $white;
   background-size: $hero-full-screen-bg-size;
   margin-bottom: 20px;
 
+  &.main {}
+
+  &.volunteer {
+      background: url(../img/volunteer/hero.jpg) center center no-repeat;
+      color: orange !important;
+  }
+
   .middle-content-section {
     text-align: center;
     color: $hero-full-screen-text-color;
