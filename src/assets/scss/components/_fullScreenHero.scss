@@ -1,6 +1,7 @@
-$hero-full-screen-bg: url(../img/hero.jpg) center center no-repeat;
+$hero-full-screen-bg: center center no-repeat;
+$hero-full-screen-overlay: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1));
 $hero-full-screen-bg-size: cover;
-$hero-full-screen-text-color: #353A15;
+$hero-full-screen-text-color: $white;
 
 .hero-full-screen, .hero-partial-screen {
   height: 100vh;
@@ -8,19 +9,32 @@ $hero-full-screen-text-color: #353A15;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  background: $hero-full-screen-bg;
+  background: url(../img/hero.jpg) $hero-full-screen-bg, $hero-full-screen-overlay;
   background-size: $hero-full-screen-bg-size;
   margin-bottom: 20px;
 
   &.main {}
 
   &.volunteer {
-      background: url(../img/volunteer/hero.jpg) center center no-repeat;
+      background: url(../img/volunteer/hero.jpg) $hero-full-screen-bg, $hero-full-screen-overlay;
+  }
+  &.work {
+        background: url(../img/work/hero.jpg) $hero-full-screen-bg, $hero-full-screen-overlay;
+  }
+  &.school {
+    background: url(../img/school/hero.jpg) $hero-full-screen-bg, $hero-full-screen-overlay;
+  }
+  &.travel {
+    background: url(../img/travel/hero.jpg) $hero-full-screen-bg, $hero-full-screen-overlay;
   }
 
   .middle-content-section {
     text-align: center;
     color: $hero-full-screen-text-color;
+
+    .hero-page-heading {
+        font-size: 6rem;
+    }
   }
 
   .top-content-section {
@@ -32,6 +46,7 @@ $hero-full-screen-text-color: #353A15;
         transition: all 200ms;
         color: $hero-full-screen-text-color;
         &:hover {
+            color: $light-gray;
             transform: scale(1.1);
         }
     }

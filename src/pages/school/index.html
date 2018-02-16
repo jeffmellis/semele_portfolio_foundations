@@ -11,5 +11,39 @@ title="School"
     {{> experienceBlock school_exchange }}
     {{> experienceBlock school_geneticsConference }}
 
+    <div class="orbit" role="region" aria-label="school pictures" data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;">
+        <div class="orbit-wrapper">
+            <div class="orbit-controls">
+                <button class="orbit-previous"><span class="show-for-sr">Previous</span>&#9664;&#xFE0E;</button>
+                <button class="orbit-next"><span class="show-for-sr">Next</span>&#9654;&#xFE0E;</button>
+            </div>
+            <ul class="orbit-container">
+                <li class="is-active orbit-slide">
+                    <figure class="orbit-figure">
+                        <img class="orbit-image" src="../assets/img/school/img1.jpg" alt="v02 max">
+                        <figcaption class="orbit-caption">V02 Max Test</figcaption>
+                    </figure>
+                </li>
+                <li class="orbit-slide">
+                    <figure class="orbit-figure">
+                        <img class="orbit-image" src="../assets/img/school/img2.jpg" alt="fire fighting 1">
+                        <figcaption class="orbit-caption">Fire Fighting Suit</figcaption>
+                    </figure>
+                </li>
+                <li class="orbit-slide">
+                    <figure class="orbit-figure">
+                        <img class="orbit-image" src="../assets/img/school/img3.jpg" alt="fire fighting 2">
+                        <figcaption class="orbit-caption">Fire Fighting Suit 2</figcaption>
+                    </figure>
+                </li>
+            </ul>
+        </div>
+        <nav class="orbit-bullets">
+            <button class="is-active" data-slide="0"><span class="show-for-sr">V02 Max Test</span><span class="show-for-sr">Current Slide</span></button>
+            <button data-slide="1"><span class="show-for-sr">Fire Fighting Suit</span></button>
+            <button data-slide="2"><span class="show-for-sr">Fire Fighting Suit 2</span></button>
+        </nav>
+    </div>
+
 </div>
 
