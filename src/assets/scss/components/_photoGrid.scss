@@ -1,30 +1,35 @@
 .photoGrid {
-    .row {
+    .pg-row {
       display: flex;
       flex-wrap: wrap;
       padding: 0 4px;
     }
 
-    .column {
+    .pg-column {
       flex: 25%;
       max-width: 25%;
       padding: 0 4px;
     }
 
-    .column img {
+    .pg-column img {
       margin-top: 8px;
       vertical-align: middle;
+      // transition: all 100ms;
+      // &:hover {
+      //   transform: scale(1.02);
+      //   box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 10px, rgba(0, 0, 0, 0.23) 0px 3px 10px;
+      // }
     }
 
     @media (max-width: 800px) {
-      .column {
+      .pg-column {
         flex: 50%;
         max-width: 50%;
       }
     }
 
     @media (max-width: 600px) {
-      .column {
+      .pg-column {
         flex: 100%;
         max-width: 100%;
       }
