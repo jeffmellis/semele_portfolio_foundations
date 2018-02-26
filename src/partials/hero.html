@@ -6,7 +6,13 @@
     </div>
 
     <div class="middle-content-section">
-        <h1 class="hero-page-heading">{{title}}</h1>
+        {{#ifequal link-to-about "true"}}
+            <a href="{{root}}/aboutMe">
+                <h1 class="hero-page-heading">{{title}}</h1>
+            </a>
+        {{else}}
+            <h1 class="hero-page-heading">{{title}}</h1>
+        {{/ifequal}}
     </div>
 
     <div class="bottom-content-section" data-magellan data-threshold="0">

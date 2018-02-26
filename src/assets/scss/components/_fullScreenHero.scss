@@ -1,5 +1,6 @@
-$hero-full-screen-bg: center center no-repeat;
-$hero-full-screen-overlay: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1));
+$hero-full-screen-bg: center center repeat;
+$hero-full-screen-overlay-light: linear-gradient(rgba(0, 0, 0, 0.1),rgba(0, 0, 0, 0.1));
+$hero-full-screen-overlay: linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2));
 $hero-full-screen-bg-size: cover;
 $hero-full-screen-text-color: $white;
 
@@ -9,23 +10,23 @@ $hero-full-screen-text-color: $white;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  background: url(../img/hero.jpg) $hero-full-screen-bg, $hero-full-screen-overlay;
+  background: $hero-full-screen-overlay-light, url(../img/hero.jpg) $hero-full-screen-bg;
   background-size: $hero-full-screen-bg-size;
   margin-bottom: 20px;
 
   &.main {}
 
   &.volunteer {
-      background: url(../img/volunteer/hero.jpg) $hero-full-screen-bg, $hero-full-screen-overlay;
+      background: $hero-full-screen-overlay, url(../img/volunteer/hero.jpg) $hero-full-screen-bg;
   }
   &.work {
-        background: url(../img/work/hero.jpg) $hero-full-screen-bg, $hero-full-screen-overlay;
+        background: $hero-full-screen-overlay, url(../img/work/hero.jpg) $hero-full-screen-bg;
   }
   &.school {
-    background: url(../img/school/hero.jpg) $hero-full-screen-bg, $hero-full-screen-overlay;
+    background: $hero-full-screen-overlay, url(../img/school/hero.jpg) $hero-full-screen-bg;
   }
   &.travel {
-    background: url(../img/travel/hero.jpg) $hero-full-screen-bg, $hero-full-screen-overlay;
+    background: $hero-full-screen-overlay-light, url(../img/travel/hero.jpg) $hero-full-screen-bg;
   }
 
   .middle-content-section {
@@ -34,6 +35,17 @@ $hero-full-screen-text-color: $white;
 
     .hero-page-heading {
         font-size: 6rem;
+        color: $hero-full-screen-text-color;
+    }
+    a {
+      .hero-page-heading {
+        transition: all 200ms;
+        &:hover {
+            color: $light-gray;
+            transform: scale(1.1);
+        }
+      }
+
     }
   }
 
